@@ -31,67 +31,7 @@
     <title>IvShoot</title>
   </head>
   <body>
-    <!--! newspaper popup -->
-    <div
-      id="newspaper"
-      class="z-20 fixed w-screen h-screen hidden items-center justify-center"
-    >
-      <div
-        id="newspaperOverlay"
-        class="z-10 fixed top-0 w-screen h-screen bg-[#00000066]"
-      ></div>
-      <div
-        id="newspaperBox"
-        class="z-20 w-4/5 lg:w-3/6 h-2/5 lg:h-3/5 bg-white flex items-center rounded-md overflow-hidden border shadow-md"
-      >
-        <div class="hidden md:flex md:w-1/2 h-full">
-          <img
-            class="w-full h-full"
-            src="./assets/images/newsletter.png"
-            alt="newsletter"
-          />
-        </div>
-        <div id="subscribe-card" class="w-full md:w-1/2 h-full flex flex-col justify-center p-12 px-8 gap-4 relative bg-white shadow-lg rounded-lg">
-          <!-- Tombol Close -->
-          <button
-            class="absolute top-4 right-4 text-2xl hover:text-blue-800"
-            onclick="closeCard()"
-          >
-            <ion-icon name="close-circle-outline"></ion-icon>
-          </button>
-        
-          <!-- Konten Judul -->
-          <h3 class="text-xl font-bold text-gray-800">Berikan Dukungan.</h3>
-        
-          <!-- Deskripsi -->
-          <p class="text-md text-gray-600 font-semibold">
-            Subscribe <span class="text-lg font-semibold">IvShoot</span> untuk mendapatkan info terbaru dan diskon.
-          </p>
-        
-          <!-- Input Email -->
-          <input class="border p-2 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" type="email" placeholder="Email Address" />
-        
-          <!-- Tombol Subscribe -->
-          <button
-            class="rounded-md self-center py-2 px-4 bg-gray-900 text-white hover:bg-blue-800 transition-all duration-300"
-          >
-            SUBSCRIBE
-          </button>
-        </div>
-        
-        <script>
-          // Fungsi untuk menutup card
-          function closeCard() {
-            const card = document.getElementById('subscribe-card');
-            if (card) {
-              card.style.display = 'none'; // Menyembunyikan card dengan mengubah display ke 'none'
-            }
-          }
-        </script>
-        
-        
-        </div>
-        </div>
+    
 
     <header class="header w-full">
       <!--! topHeader -->
@@ -228,165 +168,44 @@
     </div>
       <!--Section Home End-->
 
-        <div class="products w-full lg:w-3/4 flex flex-col">
-          <h1 class="font-bold text-2xl p-4 border-b mb-2">Fotografi</h1>
-          <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="NewArrivals flex flex-col gap-4">
-
-              <div
-                class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-10 cursor-pointer"
-              >
-                <div class="w-20 h-20 p-2">
-                </div>
-                <div class="text-black">
-                  <h1 class="font-bold text-black text-balance text-sm">
-                    Paket Bronze
-                  </h1>
-                </div>
+      <div class="products w-full lg:w-3/4 flex flex-row flex-wrap gap-4 p-4 mb-24">
+        <h1 class="font-bold text-2xl w-full p-4 border-b mb-2">Fotografi</h1>
+        
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          
+          <!-- Produk 1 -->
+          <div class="NewArrivals flex flex-col gap-4">
+            <div class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-10 cursor-pointer">
+              <div class="w-20 h-20 p-2">
+                <!-- Gambar atau ikon -->
               </div>
-              <div
-                class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-2 cursor-pointer"
-              >
-                <div class="w-20 h-20 p-2">
-                  <img
-                    class="w-full h-full"
-                    src="./assets/images/products/clothes-2.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text-gray-700">
-                  <h4 class="font-bold text-gray-900 text-sm text-sm">
-                    Girls Pnk Embro Desi...
-                  </h4>
-                  <h4>Celana</h4>
-                  <div class="flex items-center justify-start gap-4">
-                    <strong class="text-blue-800">$21.00</strong>
-                    <s class="text-gray-500">$24.00</s>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-2 cursor-pointer"
-              >
-                <div class="w-20 h-20 p-2">
-                  <img
-                    class="w-full h-full"
-                    src="./assets/images/products/clothes-3.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text-gray-700">
-                  <h4 class="font-bold text-gray-900 text-sm text-sm">
-                    Black Floral Wrap...
-                  </h4>
-                  <h4>Celana</h4>
-                  <div class="flex items-center justify-start gap-4">
-                    <strong class="text-blue-800">$5.00</strong>
-                    <s class="text-gray-500">$15.00</s>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-2 cursor-pointer"
-              >
-                <div class="w-20 h-20 p-2">
-                  <img
-                    class="w-full h-full"
-                    src="./assets/images/products/shirt-1.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text-gray-700">
-                  <h4 class="font-bold text-gray-900 text-sm text-sm">
-                    Pure Garment Dye...
-                  </h4>
-                  <h4>Fashion Laki-laki</h4>
-                  <div class="flex items-center justify-start gap-4">
-                    <strong class="text-blue-800">$30.00</strong>
-                    <s class="text-gray-500">$40.00</s>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="TopRated flex flex-col gap-4">
-              <div
-                class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-2 cursor-pointer"
-              >
-                <div class="w-28 h-20 p-2">
-                </div>
-                <div class="text-gray-700">
-                  <h4 class="font-bold text-gray-900 text-sm">
-                    Paket Gold
-                  </h4>
-
-                </div>
-              </div>
-              <div
-                class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-2 cursor-pointer"
-              >
-                <div class="w-20 h-20 p-2">
-                  <img
-                    class="w-full h-full"
-                    src="./assets/images/products/jewellery-3.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text-gray-700">
-                  <h4 class="font-bold text-gray-900 text-sm">
-                    Silver Deer Heart Neck...
-                  </h4>
-                  <h4>Perhiasan</h4>
-                  <div class="flex items-center justify-start gap-4">
-                    <strong class="text-blue-800">$12.00</strong>
-                    <s class="text-gray-500">$32.00</s>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-2 cursor-pointer"
-              >
-                <div class="w-20 h-20 p-2">
-                  <img
-                    class="w-full h-full"
-                    src="./assets/images/products/perfume.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text-gray-700">
-                  <h4 class="font-bold text-gray-900 text-sm">
-                    Titan 100 Ml Womens
-                  </h4>
-                  <h4>Perfume</h4>
-                  <div class="flex items-center justify-start gap-4">
-                    <strong class="text-blue-800">$74.00</strong>
-                    <s class="text-gray-500">$104.00</s>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-2 cursor-pointer"
-              >
-                <div class="w-20 h-20 p-2">
-                  <img
-                    class="w-full h-full"
-                    src="./assets/images/products/belt.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text-gray-700">
-                  <h4 class="font-bold text-gray-900 text-sm">
-                    Men's Leather Rever...
-                  </h4>
-                  <h4>Sabuk</h4>
-                  <div class="flex items-center justify-start gap-4">
-                    <strong class="text-blue-800">$17.00</strong>
-                    <s class="text-gray-500">$23.00</s>
-                  </div>
-                </div>
+              <div class="text-black">
+                <h1 class="font-bold text-black text-sm">
+                  Paket Bronze
+                </h1>
               </div>
             </div>
           </div>
+          
+          <!-- Produk 2 -->
+          <div class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-2 cursor-pointer">
+            <div class="w-28 h-20 p-2">
+              <!-- Gambar atau ikon -->
+            </div>
+            <div class="text-gray-700">
+              <h4 class="font-bold text-gray-900 text-sm">
+                Paket Gold
+              </h4>
+            </div>
+          </div>
+          
+          <!-- Produk 3 (dapat diisi dengan konten lainnya) -->
+          <div class="TopRated flex flex-col gap-4 mb-24">
+            <!-- Konten Top Rated -->
+          </div>
+        </div>
+      </div>
+      
 
         </li>
       </ul>
@@ -518,9 +337,9 @@
       <div
         class="mx-auto flex items-center justify-center flex-col gap-4 py-10 pb-20 lg:pb-10"
       >
-        <h4 class="text-gray-500 text-md lg:text-lg font-semibold">
-          Ini Tugas PKKWU yaa
-        </h4>
+      <p class="text-sm text-gray-600">
+        &copy; 2024 <span class="font-semibold">IvShoot</span>. All rights reserved.
+      </p>
       </div>
     </footer>
     <!--! icons -->
