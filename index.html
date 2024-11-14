@@ -69,7 +69,7 @@
         <div
           class="border-b flex flex-col sm:flex-row w-full items-center p-6 mb-6 md:px-24"
         >
-        <img src="./assets/images/logo/Ivshoot.png" class=" h-14 w-14 mr-3">
+        <img src="./assets/images/logo/v.png" class=" h-14 w-14 mr-3">
           <h1 class="font-semibold text-4xl text-gray-600 mr-10">IvShoot</h1>
           <form class="relative w-full sm:w-3/5 mr-5">
             <input
@@ -119,10 +119,10 @@
                   </h3>
                   <ul class="flex flex-col items-start justify-start gap-2">
                     <li>
-                      <a href="#"> Paket Bronze</a>
+                      <a href="#paket-bronze">Paket Bronze</a>
                     </li>
                     <li>
-                      <a href="#"> Paket Gold </a>
+                      <a href="#paket-Gold">Paket Gold</a>
                     </li>
                   </ul>
                 </li>
@@ -132,10 +132,10 @@
                   </h3>
                   <ul class="flex flex-col items-start justify-start gap-2">
                     <li>
-                      <a href="#"> Paket Basic Video Clip </a>
+                      <a href="paket-basic"> Paket Basic Video Clip </a>
                     </li>
                     <li>
-                      <a href="#"> Paket Premium Video Clip </a>
+                      <a href="paket-premium"> Paket Premium Video Clip </a>
                     </li>
                   </ul>
                 </li>
@@ -169,44 +169,201 @@
       <!--Section Home End-->
 
       <div class="products w-full lg:w-3/4 flex flex-row flex-wrap gap-4 p-4 mb-24">
-        <h1 class="font-bold text-2xl w-full p-4 border-b mb-2">Fotografi</h1>
-        
-        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          
-          <!-- Produk 1 -->
-          <div class="NewArrivals flex flex-col gap-4">
+    <h1 class="font-bold text-2xl w-full p-4 border-b mb-2">Fotografi</h1>
+
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        <!-- Produk 1: Paket Bronze -->
+        <div  id="paket-bronze" class="NewArrivals flex flex-col gap-4">
             <div class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-10 cursor-pointer">
-              <div class="w-20 h-20 p-2">
-                <!-- Gambar atau ikon -->
+                <div class="w-20 h-20 p-2">
+                    <!-- Gambar atau ikon -->
+                </div>
+                <div class="text-black">
+                  <h1 class="font-bold text-black text-sm">
+                      Paket Bronze
+                  </h1>
               </div>
-              <div class="text-black">
-                <h1 class="font-bold text-black text-sm">
-                  Paket Bronze
-                </h1>
               </div>
+              
+              <!-- Kotak dengan dua gambar dan animasi flip yang lebih besar di bawah Paket Bronze -->
+              <div class="w-full h-80 bg-white border shadow-sm rounded-lg flex items-center justify-center gap-4 cursor-pointer mt-4">
+                  <div class="flip-card w-64 h-64 relative">
+                      <div class="flip-card-inner">
+                          <!-- Gambar Depan -->
+                          <div class="flip-card-front w-full h-full flex items-center justify-center rounded-lg bg-white bg-opacity-80" 
+                          style="background-image: url('./assets/images/logo/v.png'); background-size: cover; background-position: center;">
+                         <div class="text-center p-4 bg-white bg-opacity-80 rounded-lg">
+                             <h1 class="font-bold text-black text-lg mb-2">
+                                 3 Foto Digital (dengan editing dasar)
+                             </h1>
+                             <p class="text-sm text-gray-700 mb-2">
+                                 Harga: Rp 50.000/foto
+                             </p>
+                             <p class="text-sm text-gray-700">
+                                 Keterangan: Foto diberi watermark besar, watermark dihapus setelah pembelian.
+                             </p>
+                         </div>
+                     </div>
+              
+                          <!-- Gambar Belakang dengan teks -->
+                          <div class="flip-card-back w-full h-full flex items-center justify-center">
+                            <img src="./assets/images/logo/Ivshoot.png" class="object-cover w-full h-full rounded-lg"/>
+                        </div>
+                      </div>
+                  </div>
+              </div>    
+        </div>
+
+        <!-- Produk 2: Paket Gold -->
+        <div  id="paket-Gold" class="NewArrivals flex flex-col gap-4">
+            <div class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-10 cursor-pointer">
+                <div class="w-20 h-20 p-2">
+                    <!-- Gambar atau ikon -->
+                </div>
+                <div class="text-black">
+                  <h1 class="font-bold text-black text-sm">
+                      Paket Gold
+                  </h1>
+              </div>
+              </div>
+              
+              <!-- Kotak dengan dua gambar dan animasi flip yang lebih besar di bawah Paket Gold -->
+              <div class="w-full h-80 bg-white border shadow-sm rounded-lg flex items-center justify-center gap-4 cursor-pointer mt-4">
+                  <div class="flip-card w-64 h-64 relative">
+                      <div class="flip-card-inner">
+                          <!-- Gambar Depan -->
+                          <div class="flip-card-front w-full h-full flex items-center justify-center rounded-lg bg-white bg-opacity-80" 
+                               style="background-image: url('./assets/images/logo/v.png'); background-size: cover; background-position: center;">
+                              <div class="text-center p-4 bg-white bg-opacity-80 rounded-lg">
+                                  <h1 class="font-bold text-black text-lg mb-2">
+                                      5 Foto Digital (dengan editing profesional)
+                                  </h1>
+                                  <p class="text-sm text-gray-700 mb-2">
+                                      Harga: Rp 350.000
+                                  </p>
+                                  <p class="text-sm text-gray-700">
+                                      Keterangan: Edit mendetail, termasuk retouching dan color grading untuk hasil maksimal.
+                                  </p>
+                              </div>
+                          </div>
+              
+                          <!-- Gambar Belakang dengan teks -->
+                          <div class="flip-card-back w-full h-full flex items-center justify-center">
+                            <img src="./assets/images/logo/Ivshoot2.png" class="object-cover w-full h-full rounded-lg"/>
+                        </div>
+                      </div>
+                  </div>
+              </div>  
+        </div>
+    </div>
+</div>
+
+      
+      <!--Section Home End-->
+
+      <div class="products w-full lg:w-3/4 flex flex-row flex-wrap gap-4 p-4 mb-24">
+        <h1 class="font-bold text-2xl w-full p-4 border-b mb-2">Videografi</h1>
+    
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    
+            <!-- Produk 1: Paket Basic Video Clip -->
+            <div  id="paket-basic" class="NewArrivals flex flex-col gap-4">
+                <div class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-4s cursor-pointer">
+                    <div class="w-20 h-20 p-2">
+                        <!-- Gambar atau ikon -->
+                    </div>
+                    <div class="text-black">
+                      <h1 class="font-bold text-black text-sm">
+                          Paket Basic Video Clip
+                      </h1>
+                  </div>
+                  </div>
+                  
+                  <!-- Kotak dengan dua gambar dan animasi flip yang lebih besar di bawah Paket Bronze -->
+                  <div class="w-full h-80 bg-white border shadow-sm rounded-lg flex items-center justify-center gap-4 cursor-pointer mt-4">
+                      <div class="flip-card w-64 h-64 relative">
+                          <div class="flip-card-inner">
+                              <!-- Gambar Depan -->
+                              <div class="flip-card-front w-full h-full flex items-center justify-center rounded-lg bg-white bg-opacity-80" 
+                                   style="background-image: url('./assets/images/logo/v.png'); background-size: cover; background-position: center;">
+                                  <div class="text-center p-4 bg-white bg-opacity-80 rounded-lg">
+                                      <h1 class="font-bold text-black text-lg mb-2">
+                                        15-30 detik video highlight (dengan editing dasar)
+                                      </h1>
+                                      <p class="text-sm text-gray-700 mb-2">
+                                        Harga: Rp 100.000/video
+                                      </p>
+                                      <p class="text-sm text-gray-700">
+                                        Keterangan: Video dengan watermark, dihapus setelah pembelian.
+                                      </p>
+                                  </div>
+                              </div>
+                  
+                              <!-- Gambar Belakang dengan teks -->
+                              <div class="flip-card-back w-full h-full flex items-center justify-center">
+                                <img src="./assets/images/logo/Cinem.gif" class="object-cover w-full h-full rounded-lg"/>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  
             </div>
-          </div>
-          
-          <!-- Produk 2 -->
-          <div class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-2 cursor-pointer">
-            <div class="w-28 h-20 p-2">
-              <!-- Gambar atau ikon -->
+    
+            <!-- Produk 2: Paket Premium Video Clip -->
+            <div  id="paket-premium" class="NewArrivals flex flex-col gap-4">
+                <div class="w-full h-28 bg-white border shadow-sm rounded-lg flex items-center justify-start gap-4 cursor-pointer">
+                    <div class="w-20 h-20 p-2">
+                        <!-- Gambar atau ikon -->
+                    </div>
+                    <div class="text-black">
+                      <h1 class="font-bold text-black text-sm">
+                        Paket Premium Video Clip
+                      </h1>
+                  </div>
+                  </div>
+                  
+                  <!-- Kotak dengan dua gambar dan animasi flip yang lebih besar di bawah Paket Gold -->
+                  <div class="w-full h-80 bg-white border shadow-sm rounded-lg flex items-center justify-center gap-4 cursor-pointer mt-4">
+                      <div class="flip-card w-64 h-64 relative">
+                          <div class="flip-card-inner">
+                              <!-- Gambar Depan -->
+                              <div class="flip-card-front w-full h-full flex items-center justify-center rounded-lg bg-white bg-opacity-80" 
+                                   style="background-image: url('./assets/images/logo/v.png'); background-size: cover; background-position: center;">
+                                  <div class="text-center p-4 bg-white bg-opacity-80 rounded-lg">
+                                      <h1 class="font-bold text-black text-lg mb-2">
+                                        2-3 Menit Video (dengan editing profesional)
+                                      </h1>
+                                      <p class="text-sm text-gray-700 mb-2">
+                                        Harga: Rp 500.000
+                                      </p>
+                                      <p class="text-sm text-gray-700">
+                                        Keterangan: Video sinematik dengan efek, transisi khusus, dan musik pilihan untuk pengalaman menonton yang epik.
+                                      </p>
+                                  </div>
+                              </div>
+                  
+                              <!-- Gambar Belakang dengan teks -->
+                              <div class="flip-card-back w-full h-full flex items-center justify-center">
+                                <img src="./assets/images/logo/Cinem 2.gif" class="object-cover w-full h-full rounded-lg"/>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  
             </div>
-            <div class="text-gray-700">
-              <h4 class="font-bold text-gray-900 text-sm">
-                Paket Gold
-              </h4>
-            </div>
-          </div>
-          
-          <!-- Produk 3 (dapat diisi dengan konten lainnya) -->
+    
+        </div>
+    </div>
+
+          <!-- Produk 3 (Top Rated) -->
           <div class="TopRated flex flex-col gap-4 mb-24">
             <!-- Konten Top Rated -->
           </div>
         </div>
       </div>
       
-
+      
         </li>
       </ul>
     </nav>
